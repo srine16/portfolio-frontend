@@ -1,0 +1,125 @@
+.home {
+  background: radial-gradient(circle at top, #0d1117, #000);
+  color: #e6edf3;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 100px 20px;
+  overflow: hidden;
+}
+
+/* Glow effect behind */
+.home::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(88,166,255,0.15), transparent 70%);
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  filter: blur(100px);
+  animation: glow 6s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { opacity: 0.6; transform: translateX(-50%) scale(1); }
+  to { opacity: 1; transform: translateX(-50%) scale(1.05); }
+}
+
+/* Profile image */
+.profile-container {
+  margin-bottom: 1.5rem;
+}
+
+.profile-ring {
+  width: 165px;
+  height: 165px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #58a6ff, #1f6feb);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  animation: float 6s ease-in-out infinite;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #0d1117;
+}
+
+/* Headings */
+.hero-name {
+  color: #58a6ff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-top: 0.5rem;
+}
+
+.hero-title {
+  color: #c9d1d9;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.hero-text {
+  color: #c9d1d9;
+  max-width: 700px;
+  line-height: 1.6;
+  font-size: 1rem;
+  margin: 0 auto 2rem;
+}
+
+/* Buttons */
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: #238636;
+  color: white;
+}
+.btn-primary:hover {
+  background-color: #2ea043;
+}
+
+.btn-secondary {
+  border: 1.8px solid #58a6ff;
+  color: #58a6ff;
+}
+.btn-secondary:hover {
+  background-color: #58a6ff1a;
+}
+
+/* Float animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-name { font-size: 1.8rem; }
+  .hero-title { font-size: 0.95rem; }
+  .hero-text { font-size: 0.9rem; }
+}

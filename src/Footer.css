@@ -1,0 +1,48 @@
+.footer {
+  background-color: #11161b;
+  color: #ccc;
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
+  margin-top: 4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.footer p {
+  margin: 0.3rem 0;
+  line-height: 1.6;
+}
+
+.footer strong {
+  color: #4fa3ff;
+  font-weight: 600;
+}
+
+.footer .highlight {
+  color: #4fa3ff;
+  font-weight: 600;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer .highlight:hover {
+  color: #00d084;
+  text-shadow: 0 0 10px rgba(0, 208, 132, 0.5);
+}
+
+.footer .university {
+  color: #aaa;
+  font-style: italic;
+}
+
+.footer:hover {
+  background-color: #0c1014;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .footer {
+    font-size: 0.85rem;
+    padding: 1.5rem 0.5rem;
+  }
+}

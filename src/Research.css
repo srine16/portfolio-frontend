@@ -1,0 +1,96 @@
+.research-section {
+  background: radial-gradient(circle at bottom, #0d1117, #010409);
+  color: #e6edf3;
+  min-height: 100vh;
+  padding: 80px 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.research-container {
+  max-width: 1100px;
+  text-align: center;
+}
+
+.research-container h1 {
+  color: #58a6ff;
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
+
+.research-container p {
+  color: #c9d1d9;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+/* ===== Research Card ===== */
+.research-card {
+  background: linear-gradient(145deg, #161b22, #0d1117);
+  border-radius: 15px;
+  padding: 1.8rem;
+  text-align: left;
+  box-shadow: 0 8px 25px rgba(56, 139, 253, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 3px solid #58a6ff;
+}
+
+.research-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 35px rgba(56, 139, 253, 0.3);
+}
+
+.research-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.research-header h2 {
+  color: #58a6ff;
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.year {
+  background-color: rgba(88, 166, 255, 0.15);
+  padding: 4px 10px;
+  border-radius: 8px;
+  color: #58a6ff;
+  font-size: 0.85rem;
+}
+
+.focus {
+  margin-top: 0.8rem;
+  color: #c9d1d9;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.tools {
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
+  color: #a6b2be;
+}
+
+.impact {
+  margin-top: 0.6rem;
+  font-size: 0.95rem;
+  color: #9fd4ff;
+  font-style: italic;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+}
