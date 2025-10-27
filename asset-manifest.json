@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/sunjida-rine/static/css/main.5cb28530.css",
-    "main.js": "/sunjida-rine/static/js/main.c7c856c7.js",
+    "main.css": "/sunjida-rine/static/css/main.777f198a.css",
+    "main.js": "/sunjida-rine/static/js/main.37b8f53d.js",
     "static/media/profile.jpg": "/sunjida-rine/static/media/profile.730f0188fbd5b1ee2180.jpg",
     "index.html": "/sunjida-rine/index.html",
-    "main.5cb28530.css.map": "/sunjida-rine/static/css/main.5cb28530.css.map",
-    "main.c7c856c7.js.map": "/sunjida-rine/static/js/main.c7c856c7.js.map"
+    "main.777f198a.css.map": "/sunjida-rine/static/css/main.777f198a.css.map",
+    "main.37b8f53d.js.map": "/sunjida-rine/static/js/main.37b8f53d.js.map"
   },
   "entrypoints": [
-    "static/css/main.5cb28530.css",
-    "static/js/main.c7c856c7.js"
+    "static/css/main.777f198a.css",
+    "static/js/main.37b8f53d.js"
   ]
 }
